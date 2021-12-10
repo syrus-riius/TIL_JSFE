@@ -24,7 +24,7 @@ console.log(오브젝트.함수());
 
 let obj = {
     data : {
-        함수 : function() {
+        함수 : function() { // 함수() { } <- 이렇게 선언 가능
             console.log(this); // 이 경우에 바로 윗 오브젝트인 data 지칭.
         },
     },
@@ -43,3 +43,24 @@ let objArrow = {
 console.log(objArrow.data.함수());
 
 
+
+// object 찍어내는 기계 : Constructor
+// Constructor로 생성되는 오브젝트 : Instance
+function 기계(){
+    this.이름 = 'kim';
+}
+
+let 오브젝트2 = new 기계();
+
+console.log(오브젝트2);
+
+let 오브젝트3 = {
+    이름들 : ['김', '이', '박'],
+    함수 : function(){
+        오브젝트.이름들.forEach(function(){
+            console.log(this);
+        });
+    }
+}
+
+오브젝트3.함수()

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrow Function</h1>
+    <p>let func = () => {  return ~~~ }</p>
+    <ul>
+        <li>1. 함수 본연의 기능을 잘 표현하는 문법</li>
+        <li><p>let 함수 = (a) => { return a + 10 }</p></li>
+        <li>2. 소괄호 생략이 가능</li>
+        <li><p>let 함수 = a => { return a + 10 }</p></li>
+        <li>3. 중괄호 생략이 가능</li>
+        <li><p>let 함수 = a => a + 10 </p></li>
+
+        <div></div>
+    </ul>
+    <button id="btn">버튼</button>
+
+    <script>
+        document.getElementById('btn').addEventListener('click', function(){
+            setTimeout(()=>{console.log(this.innerHTML)}, 1000);
+            
+        })
+    </script>
+    
+</body>
+</html>
